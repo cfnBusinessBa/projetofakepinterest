@@ -15,3 +15,4 @@ login_manager = LoginManager(app)
 login_manager.login_view = "homepage"
 
 from fakepinterest import routes
+
