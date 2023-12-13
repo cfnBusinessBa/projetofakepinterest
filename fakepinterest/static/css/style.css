@@ -33,7 +33,11 @@ h2 {
 
 .img-responsive {
   width: 100%;
+<<<<<<< HEAD
 }
+=======
+ }
+>>>>>>> f1924463f7b623de66af6633811f8c9b03fdd95e
 
 .overflow-hidden {
   overflow: hidden;
