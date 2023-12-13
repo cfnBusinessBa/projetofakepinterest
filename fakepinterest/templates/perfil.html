@@ -13,7 +13,7 @@ Perfil - {{ usuario.username }}
 
         <form class="bloco-add-img" method="POST" enctype="multipart/form-data">
            {{ form.csrf_token }}
-          <h2>{{ usuario.username }} - Enviar foto</h2>
+          <h2>{{ usuario.username }}</h2>
 
           <div class="bloco-arquivo">
             <label for="foto" class="botao-arquivo">
@@ -29,7 +29,7 @@ Perfil - {{ usuario.username }}
 
 {% else %}
 <div class="bloco-add-img">
-    <h2>{{ usuario.username }} - Ver Perfil</h2>
+    <h2>{{ usuario.username }}: Perfil</h2>
 </div>
 {% endif %}
 
@@ -38,7 +38,7 @@ Perfil - {{ usuario.username }}
 <div class="conteudo">
 {% for foto in usuario.fotos %}
     <div class="bloco-imagem">
-        <img src="{{ url_for('static', filename='fotos_posts/{}'.format(foto.imagem)) }}" />
+        <img class="img-responsive" src="{{ url_for('static', filename='fotos_posts/{}'.format(foto.imagem)) }}" />
     </div>
 {% endfor %}
     </div>
